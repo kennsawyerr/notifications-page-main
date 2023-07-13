@@ -13,7 +13,7 @@
 
 --White: hsl(0, 0%, 100%);
 --Very-light-blue: hsl(209, 58%, 97%);
---Light-grayish-blue1: hsl(211, 68%, 94%);
+--Light-grayish-blue1-active: hsl(211, 68%, 94%);
 --Light-grayish-blue2: hsl(205, 33%, 90%);
 --Grayishblue: hsl(219, 14%, 63%);
 --Darkgrayishblue: hsl(219, 12%, 42%);
@@ -26,6 +26,7 @@
 body{
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--Very-light-blue);
 }
 
 
@@ -39,6 +40,10 @@ body{
 
 .textbox{
     background-color: var(--White);
+    box-shadow: 3px;
+   border-radius: 15px;
+    margin: 70px auto;
+    padding: 0 30px;
 }
 
 .textbox2{
@@ -63,8 +68,6 @@ nav{
 
 nav > h3{
  margin: 0 auto 0  0;
- border-top: 1px  solid;
- border-bottom: 1px  solid;
  padding: 0;;
 }
 nav >p{
@@ -82,8 +85,7 @@ nav >p{
     font-size:14px;
 }
 
-/* - Mobile: 375px
-- Desktop: 1440px */
+
 
 /* Main */
 
@@ -91,6 +93,7 @@ ul{
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 li{
@@ -115,4 +118,27 @@ li > img{
 .time{
     display: block;
     color: var(--Blue);
+}
+
+
+/* Functionalities ;) */
+
+#already-read{
+    background-color: var(--White);
+}
+
+#mark-allmessages{
+    cursor: pointer;
+}
+
+#mark-allmessages:hover{
+    color: var(--Blue);
+}
+
+.new{
+  background-color: var(--Red);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  
 }
